@@ -1,0 +1,44 @@
+
+{% extends 'base.html' %}
+{% load static %} 
+
+{% block content %}
+<main>
+    <div class="centered-text">
+        <h1>Welcome to <span class="animated-text">Course</span> Website!</h1>
+    </div>
+    <div class="course-grid">
+        <div class="course-tile">
+            <img src="{% static 'img/python.jpg' %}" alt="Python">
+            <h2>Python</h2>
+            <p>Explore and learn the Python programming language. Learn in a very simple way.<br> 💲 Price: <strong style="font-family: 'Arial', sans-serif;">$20</strong> 💲</p>
+        </div>
+        <div class="course-tile">
+            <img src="{% static 'img/django.jpg' %}" alt="Django">
+            <h2>Django</h2>
+            <p>Explore and learn to build web applications with Django. Learn in a very simple way.<br> 💲 Price: <strong style="font-family: 'Arial', sans-serif;">$20</strong> 💲</p>
+        </div>
+        <div class="course-tile">
+            <img src="{% static 'img/tkinter.jpg' %}" alt="Tkinter">
+            <h2>Tkinter</h2>
+            <p>Explore and learn to create GUI applications with Tkinter. Learn in a very simple way.<br> 💲 Price: <strong style="font-family: 'Arial', sans-serif;">$20</strong> 💲</p>
+        </div>
+        <div class="course-tile">
+            <img src="{% static 'img/ai.jpg' %}" alt="Machine Learning">
+            <h2>Machine Learning</h2>
+            <p>Explore the world of machine learning. Learn in a very simple way.<br> 💲 Price: <strong style="font-family: 'Arial', sans-serif;">$200</strong> 💲</p>
+        </div>
+        <div class="course-tile">
+            <img src="{% static 'img/datascience.jpg' %}" alt="Data Science">
+            <h2>Data Science</h2>
+            <p>Discover the field of data science. Learn in a very simple way.<br> 💲 Price: <strong style="font-family: 'Arial', sans-serif;">$500</strong> 💲</p>
+        </div>
+        <!-- New Card for General Knowledge of Computers -->
+        <div class="course-tile">
+            <img src="{% static 'img/gk.jpg' %}" alt="General Knowledge of Computers">
+            <h2>Computer fundamentals</h2>
+            <p>Learn about computer fundamentals and concepts. Learn in a very simple way.<br> 💲 Price: <strong style="font-family: 'Arial', sans-serif;">$20</strong> 💲</p>
+        </div>
+    </div>
+</main>
+{% endblock %}
